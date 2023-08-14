@@ -1,0 +1,47 @@
+@import './variables';
+
+.nav {
+	padding: 50px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+	& > div {
+		display: flex;
+		align-items: center;
+		a {
+			margin-right: 15px;
+			svg {
+				width: 20px;
+				height: 20px;
+				color: $c-white;
+				transition: all .3s linear;
+			}
+			&:hover {
+				svg {
+					color: $c-primary;
+				}
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.nav {
+	   padding: 20px 10px;
+	   & > div {
+			a {
+				margin-right: 4px;
+				svg {
+					width: 16px;
+					height: 16px;
+				}
+			}
+		}
+	}
+} 

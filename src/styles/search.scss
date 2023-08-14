@@ -1,0 +1,87 @@
+@import './account';
+
+.form-search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // display: flex;
+  // flex-direction: column;
+    width: 30vw;
+  .category {
+    margin-top: 50px;
+    a {
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .btn {
+      font-size: 20px;
+    }
+  }
+  form {
+    width: 100%;
+    position: relative;
+    height: 40px;
+    input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      font-size: 20px;
+      padding: 5px 10px 5px 30px;
+      height: 100%;
+      &:focus {
+        outline: none;
+      }
+    }
+    svg {
+      color: black;
+      position: absolute;
+      top: 50%;
+      left: 7px;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.c-search {
+    padding: 2%;
+    h2 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+	.form-search {
+    width: 50vw;
+  } 
+} 
+
+@media screen and (max-width: 992px) {
+	.header {
+    .img {
+      height: 25vh;
+    }
+  }
+  
+} 
+@media screen and (max-width: 768px) {
+	.form-search {
+    top: 60%;
+    transform: translate(-50%, 0%);
+    form {
+      height: 35px;
+    }
+  }  
+
+} 
+
+
+@media screen and (max-width: 1280px) {
+	.form-search {
+    width: 90vw;
+  } 
+} 

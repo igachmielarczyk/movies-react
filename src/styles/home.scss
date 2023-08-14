@@ -1,0 +1,54 @@
+@import './variables';
+
+
+.s-main {
+	width: 100%;
+	height: 80vh;
+	position: relative;
+	.img {
+		width: 100%;
+		height: 100%;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.bg-img {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: rgb(0,0,0);
+			background: linear-gradient(90deg, rgba(0,0,0,0.9093838218881303) 0%, rgba(255,255,255,0) 100%);
+		}
+	}
+    .info {
+        position: absolute;
+        top: 50%;
+        left: 2%;
+        transform: translateY(-50%);
+        width: 70%;
+        .btn-wrapper {
+            margin: 20px 0;
+            button {
+                margin-right: 20px;
+								&:last-child {
+									margin-right: 0;
+								}
+            }
+        }
+        .c-gray {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+	.s-main {
+		.info {
+			width: 96%;
+			transform: translateY(-35%);
+		}
+	}
+} 
