@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <div className='nav'>
       <Link to='/'>
-        <h1>nnetflix</h1>
+        <h1>netflix</h1>
       </Link>
       {user?.email ? (
         <div>

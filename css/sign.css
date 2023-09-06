@@ -1,0 +1,138 @@
+.btn {
+  color: #ebe7e7;
+  border-radius: 0;
+  font-size: 16px;
+  padding: 8px 20px;
+  transition: all 0.2s linear;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+.btn.btn-primary {
+  background-color: #E50913;
+  border: 1px solid #E50913;
+}
+.btn.btn-primary:hover {
+  background-color: transparent;
+  border: 1px solid #ebe7e7;
+}
+.btn.btn-outline {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+.btn.btn-outline:hover {
+  border: 1px solid #ebe7e7;
+}
+.btn.btn-white {
+  background-color: #ebe7e7;
+  border: 1px solid #ebe7e7;
+  color: #000;
+}
+.btn.btn-white:hover {
+  filter: brightness(87%);
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}
+.sign {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.sign .img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.sign .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sign .img .bg-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9093838219) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.wrapper-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.73);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 75vh;
+}
+.wrapper-form .box-form {
+  width: 70%;
+}
+.wrapper-form h1 {
+  color: #ebe7e7;
+  margin-bottom: 26px;
+  text-transform: none;
+  cursor: default;
+}
+.wrapper-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.wrapper-form form .btn-primary {
+  margin-top: 15px;
+  font-size: 20px;
+}
+.wrapper-form form .detail {
+  margin-top: 35px;
+}
+.wrapper-form form .detail .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #b3a8a8;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.wrapper-form form .detail p span {
+  color: #b3a8a8;
+}
+.wrapper-form form .detail p a {
+  color: #ebe7e7;
+  transition: all 0.2s linear;
+}
+.wrapper-form form .detail p a:hover {
+  color: #E50913;
+}
+
+@media screen and (max-width: 1280px) {
+  .wrapper-form {
+    width: 40vw;
+    height: 75vh;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wrapper-form {
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 567px) {
+  .wrapper-form {
+    width: 100vw;
+    height: 100vh;
+  }
+  .wrapper-form .box-form {
+    width: 90%;
+  }
+}/*# sourceMappingURL=sign.css.map */

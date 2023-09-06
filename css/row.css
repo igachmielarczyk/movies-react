@@ -1,0 +1,68 @@
+.slider-row {
+  padding: 0 2%;
+  padding: 2% 2%;
+  border-bottom: 1px solid rgba(193, 167, 167, 0.23);
+}
+.slider-row h2 {
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 100%;
+  height: 200px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0px 0px 24px 0px rgb(255, 255, 255);
+  -moz-box-shadow: inset 0px 0px 24px 0px rgb(255, 255, 255);
+  box-shadow: inset 0px 0px 24px 0px rgb(255, 255, 255);
+  color: #ebe7e7;
+}
+.card .title {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+}
+.card img {
+  width: 101%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: -1px;
+}
+.card .heart-wrap {
+  top: 3%;
+  left: 3%;
+  font-size: 1.4rem;
+  position: absolute;
+  transition: all 0.3s ease;
+  opacity: 0;
+  display: block;
+}
+.card .heart-wrap.i-close {
+  left: 90%;
+}
+.card:hover .title {
+  opacity: 1;
+  z-index: 2;
+}
+.card:hover img {
+  filter: brightness(35%);
+}
+.card:hover .heart-wrap {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .slider-row h2 {
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=row.css.map */
