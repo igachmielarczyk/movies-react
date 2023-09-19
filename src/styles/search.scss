@@ -1,13 +1,12 @@
-@import './account';
+@import "./account";
 
 .form-search {
   position: absolute;
-  top: 50%;
+  bottom: 0rem;
   left: 50%;
   transform: translate(-50%, -50%);
-  // display: flex;
-  // flex-direction: column;
-    width: 30vw;
+  z-index: 999;
+  width: 30vw;
   .category {
     margin-top: 50px;
     a {
@@ -48,40 +47,31 @@
 }
 
 .c-search {
-    padding: 2%;
-    h2 {
-        margin-bottom: 1rem;
-    }
+  padding: 2%;
+  h2 {
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 1280px) {
-	.form-search {
-    width: 50vw;
-  } 
-} 
+  .form-search {
+    width: 90vw;
+  }
+}
 
 @media screen and (max-width: 992px) {
-	.header {
+  .header {
     .img {
       height: 25vh;
     }
   }
-  
-} 
+}
 @media screen and (max-width: 768px) {
-	.form-search {
+  .form-search {
     top: 60%;
     transform: translate(-50%, 0%);
     form {
       height: 35px;
     }
-  }  
-
-} 
-
-
-@media screen and (max-width: 1280px) {
-	.form-search {
-    width: 90vw;
-  } 
-} 
+  }
+}
