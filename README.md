@@ -25,7 +25,7 @@ The Netflix Clone is a web application that mimics the popular streaming service
 1. Clone this repository:
 
     ```bash
-    git clone [https://link-to-your-repository.git](https://github.com/igachmielarczyk/movies-react.git)
+    git clone https://github.com/igachmielarczyk/movies-react.git
     ```
 
 2. Navigate to the project folder:
